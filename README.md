@@ -16,15 +16,9 @@ Este es un repositorio hecho por __Marco Antonio Núñez Muñoz__ para guardar l
 
 * __Unidad 1__
 
-    1. [Ejercicio 1](https://youtube.com/)
-
-    2. Ejercicio 2
+    1. [Ejercicio 1: Formatos de texto](/01_Formato_Texto/index.html)
 
 * __Unidad 2__
-
-    1. Ejercicio 1
-
-    2. Ejercicio 2
 
 * __Unidad 3__
 
@@ -75,6 +69,7 @@ Para crear este README, se utilizó [Markdown Live Preview](https://markdownlive
 
 
 ```
+Hola
 
 ```
 
@@ -84,4 +79,4 @@ Para crear este README, se utilizó [Markdown Live Preview](https://markdownlive
 
 
 
-![This is an alt text.]( "UABCS")
+![This is an alt text.](https://www.uabcs.mx/assets/images/tail-assets/logo_uabcs.png "UABCS")
