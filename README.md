@@ -1,2 +1,87 @@
-# DesarrolloWeb
+# Desarrollo Web IDS UABCS
 
+
+
+## Contenido
+
+
+
+Este es un repositorio hecho por __Marco Antonio Núñez Muñoz__ para guardar los ejercicios que hago sobre __Programación Web__.
+
+
+
+## Lista de ejercicios
+
+
+
+* __Unidad 1__
+
+    1. [Ejercicio 1](https://youtube.com/)
+
+    2. Ejercicio 2
+
+* __Unidad 2__
+
+    1. Ejercicio 1
+
+    2. Ejercicio 2
+
+* __Unidad 3__
+
+* __Unidad 4__
+
+* __Unidad 5__
+
+* __Unidad 6__
+
+
+
+
+
+## Tabla de unidades
+
+
+
+| Número de unidad  | Competencias |
+
+|:-----:|:-----:|
+
+| I     | Analiza los fundamentos de la Web, así como los elementos básicos de codificación y los estándares definidos de diseño, para desarrollar sitios dinámicos en la Web, en base a la arquitectura MVC.      |
+
+| II     | Analiza las herramientas para la gestión de servidores Web y desarrolla una infraestructura básica para implementar un sitio Web dinámico con base a las caracteristicas de gestión de servidores Web.     |
+
+| III     | Analiza los fundamentos de HTML y utliza los principales elementos en la estructura básica de un documento HTML, para desarrollar hojas de estilo en base a las reglas de codificación y los estándares definidos de diseño de HTML.      |
+
+| IV     | Conoce los fundamentos de CSS e implementa las características para dar formato a los elementos de HTML, para desarrollar presentaciones con diseño en base las técnicas y recomendaciones de las mejores practicas.      |
+
+| V     | Conoce los fundamentos de JavaScript e implementa los elementos principales para la creación de sitiosweb interactivos con una mejor usabilidad para el usuario final en base a las caracteristicas de un problema.      |
+
+| VI     | Conoce los fundamentos de la programación de lado del servidor y construye Scripts que realicen las actividades principales de un sistema de software en base a la codificación para el acceso a datos y la seguridad necesaria para el correcto funcionamiento de un sitio dinámico.      |
+
+
+
+## Links
+
+
+
+Para crear este README, se utilizó [Markdown Live Preview](https://markdownlivepreview.com/).
+
+
+
+
+
+## Código de ejemplo
+
+
+
+```
+
+```
+
+
+
+## Logo de la universidad
+
+
+
+![This is an alt text.]( "UABCS")
