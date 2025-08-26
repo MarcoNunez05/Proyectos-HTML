@@ -16,7 +16,7 @@ Este es un repositorio hecho por __Marco Antonio Núñez Muñoz__ para guardar l
 
 * __Unidad 1__
 
-    1. [Ejercicio 1: Formatos de texto](/01_Formato_Texto/index.html)
+    1. [Formatos de texto](/01_Formato_Texto/index.html)
 
 * __Unidad 2__
 
