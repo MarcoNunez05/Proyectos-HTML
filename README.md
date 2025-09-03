@@ -20,6 +20,8 @@ Este es un repositorio hecho por __Marco Antonio Núñez Muñoz__ para guardar l
 
     2. [Lista, Multimedia y Tablas](/02_ListasMultimediaTablas/PaginaBasica.html)
 
+    3. [Semántica y Metadatos](/03_SemanticaMetadatos/PaginaBasica.html)
+
 * __Unidad 2__
 
 * __Unidad 3__
