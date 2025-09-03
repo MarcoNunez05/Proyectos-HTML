@@ -3,6 +3,8 @@
     <head>
         <title>Blog de Marco</title>
         <meta charset="UTF-8">
+        <meta name="author" content="Marco Núñez">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
@@ -78,6 +80,9 @@
                         <source src="audio/asleep.mp3">
                     </audio>
 
+                    <p>Aquí hay otra:</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jp7kfYH4VaE?si=0yyuzppb8DlviDoT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                     <p>También tengo que mencionar que aprender a programar es complicado, así que voy a dejar una tabla de mi dificutlad con cada lenguaje de programmación de conozco:</p>
                     <table border="1">
                         <thead>
@@ -139,7 +144,7 @@
                     <h3>Envía un mensaje!</h3>
                     <p>Si me quiere contactar por algún motivo, aquí dejo un formulario para que lo pueda lograr:</p>
 
-                <form action="#" method="get">
+                <form action="gracias.html" method="get">
                 <fieldset>
                     <legend>Formulario de mensajes</legend>
                     <label for="name">¿Quién es?</label>
@@ -150,17 +155,19 @@
                     <textarea id="mens" name="20" rows="5" cols="60" placeholder="Ingrese su mensaje..."></textarea>
                     <br> <br>
                     <label for="motivo">¿Cuál es el motivo de su mensaje?</label>
-                    <select id="movivo" size="1" name="pais" multiple>
+                    <br>
+                    <select id="movivo" size="3" name="pais" multiple>
                         <option value="platicar">Plática</option>
                         <option value="sugerencia">Sugerencia</option>
                         <option value="negocios">Negocios</option>
                     </select>
                     <br> <br>
 
-                    <label for="anonimo">¿</label>
-                    <input id="anonimo" list="anonimo" name="lenguaje">
+                    <label for="anonimo">¿Quiere permanecer anónimo si llego a publicar algo de usted en este blog?</label>
+                    <br>
+                    <input id="anonimo" list="anonimos" name="lenguaje">
 
-                    <datalist id="anonimo">
+                    <datalist id="anonimos">
                         <option value="Sí"></option>
                         <option value="No"></option>
                     </datalist>
