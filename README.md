@@ -16,15 +16,19 @@ Este es un repositorio hecho por __Marco Antonio Núñez Muñoz__ para guardar l
 
 * __Unidad 1__
 
+    En esta unidad no hubieron trabajos programados.
+
+* __Unidad 2__
+
     1. [Página básica](/01_PaginaBasica/PaginaBasica.html)
 
     2. [Lista, Multimedia y Tablas](/02_ListasMultimediaTablas/PaginaBasica.html)
 
     3. [Semántica y Metadatos](/03_SemanticaMetadatos/PaginaBasica.html)
 
-* __Unidad 2__
-
 * __Unidad 3__
+
+    1. [Formato de Texto, fuentes, fondos y border](/04_EstilosCSS/PaginaBasica.html)
 
 * __Unidad 4__
 
