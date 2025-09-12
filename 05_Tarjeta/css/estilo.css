@@ -1,0 +1,37 @@
+*
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imagebox
+{
+    width: 300px;
+    height: 320px;
+    background: rgb(235, 234, 234);
+    color: white;
+    border: 3px solid rgb(212, 211, 211);
+    margin: 0% 2%;
+    border-radius: 5% 5% 0% 0%;
+}
+
+.box
+{
+    width: 300px;
+    height: 240px;
+    background: white;
+    color: black;
+    border: 3px solid rgb(212, 211, 211);
+    margin: 0% 2%;
+    border-radius: 0% 0% 5% 5%;
+}
+
+.button
+{
+    width: 160px;
+    height: 50px;
+    font-size: 24px;
+    background-color: rgb(22, 159, 250);
+    border: 0px;
+    color: white;
+    border-radius: 5%;
+}
