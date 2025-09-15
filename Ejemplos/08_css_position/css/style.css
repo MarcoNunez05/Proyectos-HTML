@@ -1,0 +1,39 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.gray-background
+{
+    background-color: lightgray;
+}
+
+.container
+{
+    min-height: 400px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.relative-box
+{
+    background: lightblue;
+    position: relative;
+    top: 30px;
+    left: 25px;
+}
+
+.absolute-box
+{
+    background: lightcoral;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.fixed-box
+{
+    background: lightgoldenrodyellow;
+    position: fixed;
+}
