@@ -77,20 +77,59 @@ header
     width: 50%;
 }
 
+.cuenta-select
+{
+    margin-right: 50px;
+    width: 6%;
+    display: inline-flex
+}
+
 .cuentaimg
 {
-    width: 5%;
-    padding: 1% 0% 0% 0%;
-    display: inline-block;
+    width: 2%;
+    padding-top: 10px;
+    padding-right: 50px;
 }
 
 .cuenta
 {
-    width: 7%;
-    display: inline-block;
+    width: 6%;
     font-family: jersey25, sans-serif;
-    margin: 0% 0% 0% -2.5%;
-    padding: 0% 0% 0% 0%;
+}
+
+.cuenta-submenu
+{
+    font-family: jersey25, sans-serif;
+    font-size: x-large;
+    display: block;
+    position: absolute;
+    background: white;
+    width: 250px;
+    z-index: 100;
+    top: 90%;
+    padding: 0;
+    box-shadow: 2px 2px 5px 0 gray;
+    border-radius: 5px;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+}
+
+.cuenta-submenu-text
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cuenta-submenu-text:hover
+{
+    background-color: #e6e6e6;
+    transition: background-color 0.2s ease-in;
+}
+
+.cuenta-select:hover .cuenta-submenu {
+    max-height: 700px;
+    transition: max-height 0.3s ease-in;
 }
 
 .cuentafont
@@ -166,20 +205,93 @@ header
     cursor: pointer;
 }
 
-.cardcontainer
+.card-container
 {
     width: 100%;
-    padding-top: 7%;
+    padding-top: 5%;
     padding-bottom: 7%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
+.card
+{
+    width: 15%;
+    height: 250px;
+    border-radius: 5%;
+    font-family: jersey25, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 250%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card-img-videojuegos
+{
+    margin-top: 20px;
+    width: 40%;
+}
+
+.card-img-accesorios
+{
+    margin-top: 20px;
+    width: 50%;
+}
+
+.card-img-consolas
+{
+    margin-top: 40px;
+    width: 90%;
+}
+
+.card-img-regalo
+{
+    margin-top: 30px;
+    width: 50%;
+}
+
+.card-text-videojuegos
+{
+    margin-top: 20px;
+}
+
+.card-text-accesorios
+{
+    margin-top: 34px;
+}
+
+.card-text-consolas
+{
+    margin-top: 45px;
+}
+
+.card-text-regalo
+{
+    margin-top: 30px;
+    font-size: 90%;
+}
+
 .card-videojuegos
 {
-    width: 10%;
     background-color: #FF4757;
-    margin-left: 10%;
+}
+
+.card-accesorios
+{
+    background-color: #1F8FFF;
+}
+
+.card-consolas
+{
+    background-color: #2ED674;
+}
+
+.card-regalo
+{
+    background-color: #FFA600;
 }
 
