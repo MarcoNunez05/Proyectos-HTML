@@ -38,6 +38,8 @@ Este es un repositorio hecho por __Marco Antonio Núñez Muñoz__ para guardar l
 
     5. [Tarjetas Flex](/08_TarjetasFlex/index.html)
 
+    6. [Variables y funciones](/09_VariablesFunciones/index.html)
+
 * __Unidad 4__
 
 * __Unidad 5__
