@@ -40,6 +40,8 @@ Este es un repositorio hecho por __Marco Antonio Núñez Muñoz__ para guardar l
 
     6. [Variables y funciones](/09_VariablesFunciones/index.html)
 
+    7. [Grid](/10_GridFlex/index.html)
+
 * __Unidad 4__
 
 * __Unidad 5__

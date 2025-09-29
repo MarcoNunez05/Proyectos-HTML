@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="img/gamezone.png">
+        </div>
+        <div class="form">
+            <form action="#">
+                <input class="buscar" id="busqueda" type="text" name="buscar" placeholder="Búsqueda" required>
+                <button class="button" type="submit"><img class="button-image" src="img/search.png"></button>
+            </form>
+        </div>
+        <div class="cuenta-select">
+            <div class="cuentaimg">
+                <a href="#"><img src="img/icon.png"></a>
+            </div>
+            <div class="cuenta">
+                <a class="cuentafont" href="#"><h1>Cuenta</h1></a>
+            </div>
+
+            <ul class="cuenta-submenu">
+                <li class="cuenta-submenu-text"><a href="#">Perfil</a></li>
+                <li class="cuenta-submenu-text"><a href="#">Historial de compras</a></li>
+                <li class="cuenta-submenu-text"><a href="#">Configuración</a></li>
+                <li class="cuenta-submenu-text"><a href="#">Cerrar sesión</a></li>
+            </ul>
+        </div>
+        <div class="carrito-select">
+            <div class="carrito">
+                <a class="carritofont" href="#"><h1>Carrito (0)</h1></a>
+            </div>
+            <div class="carritoimg">
+                <a href="#"><img src="img/cart.png"></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="card-container">
+        <div class="card card-videojuegos">
+            <img class="card-img-videojuegos" src="img/cards/fortnite.png" alt="">
+            <p class="card-text-videojuegos">Videojuegos</p>
+        </div>
+        <div class="card card-accesorios">
+            <img class="card-img-accesorios" src="img/cards/controller.png" alt="">
+            <p class="card-text-accesorios">Accesorios</p>
+        </div>
+        <div class="card card-consolas">
+            <img class="card-img-consolas" src="img/cards/switch.png" alt="">
+            <p class="card-text-consolas">Consolas</p>
+        </div>
+        <div class="card card-regalo">
+            <img class="card-img-regalo" src="img/cards/giftcards.png" alt="">
+            <p class="card-text-regalo">Tarjetas de regalo</p>
+        </div>
+    </section>
+
+    <section>
+         <h1 class="titulo-tendencias">Artículos en tendencia</h1>
+         <div class="tendencias-container">
+            <div class="tendencia-1">
+                <img src="img/tendencias/gta5.png" alt="">
+                <p>Grand Theft Auto V</p>
+            </div>
+            <div class="tendencia-2">
+                <img src="img/tendencias/headphones.png" alt="">
+                <p>Audífonos</p>
+            </div>
+            <div class="tendencia-3">
+                <img src="img/tendencias/steam.png" alt="">
+                <p>Tarjeta de Steam</p>
+            </div>
+            <div class="tendencia-4">
+                <img src="img/tendencias/switch2.png" alt="">
+                <p>Nintendo Switch 2</p>
+            </div>
+            <div class="tendencia-5">
+                <img src="img/tendencias/haloreach.png" alt="">
+                <p>Halo Reach</p>
+            </div>
+         </div>
+    </section>
+
+    <section>
+            <div id="mensaje">
+                <h1 class="tituloform">Únete a GameZone</h1>
+                <p class="subtitulo">Suscríbete a nuestra hoja informativa para conocer lo último en videojuegos:</p>
+
+            <form action="#" method="get" class="formhoja">
+            <fieldset class="titulo">
+                <label for="email">Email:</label> <br>                    
+                <input id="email" type="text" name="correo" placeholder="Ingrese su email..." class="campostexto" required>
+                <br> <br>
+                <label for="pais">País:</label>
+                <br>
+                <select id="pais" size="3" name="pais" class="campostexto" required>
+                    <option value="estadosunidos">Estados Unidos</option>
+                    <option value="mexico">México</option>
+                    <option value="espana">España</option>
+                </select>
+                <br> <br>
+                <label for="nombres">Nombres:</label>
+                <br>
+                <input id="firstname" type="text" name="nombres" placeholder="Nombres..." class="campostexto" required>
+                <br> <br>
+
+                <label for="apellidos">Apellidos:</label>
+                <br>
+                <input id="lastname" type="text" name="apellidos" placeholder="Apellidos..." class="campostexto" required>
+                <br> <br>
+                
+                <label for="mayor">¿Es usted mayor de 18 años?</label>
+                    <br>
+                    <input id="mayor" list="mayor18" name="mayorde18" class="campostexto" required>
+
+                <datalist id="mayor18">
+                    <option value="Sí"></option>
+                    <option value="No"></option>
+                </datalist>
+
+            </fieldset>
+                <button type="submit" class="botonsuscribir">Suscribirse</button>
+            </form>
+        </div>
+    </section>
+
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+</body>
+</html>
