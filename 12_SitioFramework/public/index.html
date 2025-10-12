@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GameZone - Videojuegos</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <nav data-theme="light" class="navbar shadow-sm px-4 sticky top-0">  
+        <div class="navbar-start">
+            <div class="w-60">
+                <img class="pl-4" src="./img/gamezone.png" alt="">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <div class="mr-10 pl-10 hidden sm:flex"> 
+                <input type="text" placeholder="Búsqueda" class="input w-270 font-normal font-busqueda">
+                <button class="btn w-15 boton-busqueda"><img src="./img/search.png" alt=""></button>
+            </div> 
+        </div>
+        <div class="navbar-end">
+            <div class="mr-50 pl-10 w-100">
+                <div class="dropdown">
+                    <details>
+                        <summary><a class="btn btn-ghost font-normal font-busqueda"><img src="./img/icon.png" alt="">Cuenta</a></summary>
+                        <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <ul class="p-2 font-normal">
+                                <li><a class="font-menu">Perfil</a></li>
+                                <li><a class="font-menu">Historial de compras</a></li>
+                                <li><a class="font-menu">Configuración</a></li>
+                                <li><a class="font-menu">Cerrar Sesión</a></li>
+                            </ul>
+                        </ul>
+                    </details>
+                </div>
+                <a class="btn btn-ghost font-normal font-busqueda">Carrito (0)<img src="./img/cart.png" alt=""></a>
+            </div> 
+        </div>
+    </nav>
+    <section>
+
+    <header class="hero header text-center text-justify py-4 font-grande">
+        <div class="hero-content flex-col">
+            <h1 class="text-5xl md:text-5x1 font-header">Videojuegos</h1>
+        </div>
+    </header>
+</body>
+</html>

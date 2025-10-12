@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+    --rojo-principal: #FF4757;
+    --azul-principal: #1F8FFF;
+    --verde-principal: #2ED674;
+    --amarillo-principal: #FFA600;
+}
+
+
+@font-face 
+{
+    font-family: 'jersey10';
+    src: url(/12_SitioFramework/public/font/Jersey10-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'jersey25';
+    src: url(/12_SitioFramework/public/font/Jersey25-Regular.ttf);
+    font-weight: normal;
+}
+
+.font-grande {
+    font-family: jersey10, sans-serif;
+}
+
+.font-normal {
+    font-family: jersey25, sans-serif;
+}
+
+.font-busqueda {
+    font-size: x-large;
+}
+
+.font-menu {
+    font-size: large;
+}
+
+.boton-busqueda {
+    background-color: var(--azul-principal);
+}
+
+.header {
+    background: linear-gradient(to left, var(--rojo-principal), #FF8F99);
+}
+
+.font-header {
+    font-size: 300%;
+}
