@@ -38,6 +38,10 @@
     font-size: large;
 }
 
+.form {
+    width: 60%;
+}
+
 .boton-busqueda {
     background-color: var(--azul-principal);
 }
@@ -48,4 +52,25 @@
 
 .font-header {
     font-size: 300%;
+}
+
+.font-vendidos {
+    font-size: 250%;
+    color: var(--verde-principal);
+}
+
+.bg-rojo {
+    background: var(--rojo-principal);
+}
+
+.bg-azul {
+    background: var(--azul-principal);
+}
+
+.bg-verde {
+    background: var(--verde-principal);
+}
+
+.bg-amarillo {
+    background: var(--amarillo-principal);
 }

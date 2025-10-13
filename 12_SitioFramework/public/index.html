@@ -7,44 +7,86 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 
-<body class="min-h-screen flex flex-col">
-    <nav data-theme="light" class="navbar shadow-sm px-4 sticky top-0">  
-        <div class="navbar-start">
-            <div class="w-60">
-                <img class="pl-4" src="./img/gamezone.png" alt="">
-            </div>
+<body class="min-h-screen flex flex-col bg-white">
+    <nav data-theme="light" class="navbar shadow-sm px-4 sticky top-0 z-1 inline-flex flex-wrap">  
+        <div class="w-3/20">
+            <img class="pl-4" src="./img/gamezone.png" alt="">
         </div>
-        <div class="navbar-center">
-            <div class="mr-10 pl-10 hidden sm:flex"> 
-                <input type="text" placeholder="Búsqueda" class="input w-270 font-normal font-busqueda">
-                <button class="btn w-15 boton-busqueda"><img src="./img/search.png" alt=""></button>
-            </div> 
-        </div>
-        <div class="navbar-end">
-            <div class="mr-50 pl-10 w-100">
-                <div class="dropdown">
-                    <details>
-                        <summary><a class="btn btn-ghost font-normal font-busqueda"><img src="./img/icon.png" alt="">Cuenta</a></summary>
-                        <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <ul class="p-2 font-normal">
-                                <li><a class="font-menu">Perfil</a></li>
-                                <li><a class="font-menu">Historial de compras</a></li>
-                                <li><a class="font-menu">Configuración</a></li>
-                                <li><a class="font-menu">Cerrar Sesión</a></li>
-                            </ul>
+        <div class="pl-10 hidden sm:inline-block form"> 
+            <input type="text" placeholder="Búsqueda en Videojuegos..." class="input w-9/10 font-normal font-busqueda">
+            <button class="btn w-15 boton-busqueda"><img src="./img/search.png" alt=""></button>
+        </div> 
+        <div class="pl-5 w-1/4 inline-flex">
+            <div class="dropdown">
+                <details>
+                    <summary class="btn btn-ghost"><img src="./img/icon.png" alt=""><a class="font-normal font-busqueda hidden sm:inline-flex">Cuenta</a></summary>
+                    <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-0 mt-3 w-52 p-2 shadow">
+                        <ul class="p-2 font-normal">
+                            <li><a class="font-menu">Perfil</a></li>
+                            <li><a class="font-menu">Historial de compras</a></li>
+                            <li><a class="font-menu">Configuración</a></li>
+                            <li><a class="font-menu">Cerrar Sesión</a></li>
                         </ul>
-                    </details>
-                </div>
-                <a class="btn btn-ghost font-normal font-busqueda">Carrito (0)<img src="./img/cart.png" alt=""></a>
-            </div> 
+                    </ul>
+                </details>
+            </div>
+            <a class="btn btn-ghost font-normal font-busqueda"><div class="hidden sm:inline-flex">Carrito (0)</div><img src="./img/cart.png" alt=""></a>
         </div>
     </nav>
-    <section>
 
     <header class="hero header text-center text-justify py-4 font-grande">
         <div class="hero-content flex-col">
             <h1 class="text-5xl md:text-5x1 font-header">Videojuegos</h1>
         </div>
     </header>
+
+    <h2 class="font-grande font-vendidos text-center pt-5">Los más vendidos</h2>
+
+    <section class="pt-5 flex gap-10 justify-center font-normal inline-flex flex-wrap">
+        <a href="#" class="w-17/20 sm:w-6/25">
+            <div data-theme="light" class="card shadow-sm hover:shadow-xl transition flex-wrap">
+                <div class="card-body">
+                    <h2 class="card-title font-busqueda">Mario Kart World</h2>
+                    <p class="font-menu">¡Prepárate para la carrera definitiva en Mario Kart World, donde cada pista está conectada en un mundo abierto lleno de desafíos, maravillas y sorpresas!</p>
+                </div>
+                <figure class="bg-rojo">
+                    <img class="w-50 pt-5 pb-10" src="img/videojuegosVendidos/mariokartworld.png" alt="" />
+                </figure>
+            </div>
+        </a>
+        <a href="#" class="w-17/20 sm:w-6/25">
+            <div data-theme="light" class="card shadow-sm hover:shadow-xl transition flex-wrap">
+                <div class="card-body">
+                    <h2 class="card-title font-busqueda">Sonic Racing: Crossworlds</h2>
+                    <p class="font-menu">¡Corre por tierra, mar, aire, espacio y tiempo en Sonic Racing: CrossWorlds! Teletranspórtate a través de los Rings de travesía a nuevas dimensiones.</p>
+                </div>
+                <figure class="bg-azul">
+                    <img class="w-65 pt-5 pb-10" src="img/videojuegosVendidos/sonicracingcrossworlds.png" alt="" />
+                </figure>
+            </div>
+        </a>
+        <a href="#" class="w-17/20 sm:w-6/25">
+            <div data-theme="light" class="card shadow-sm hover:shadow-xl transition flex-wrap">
+                <div class="card-body">
+                    <h2 class="card-title font-busqueda">Hades II</h2>
+                    <p class="font-menu">Usa las artes oscuras para abrirte paso más allá del inframundo y enfréntate al Titán del Tiempo en esta cautivadora continuación del gran juego de mazmorras.</p>
+                </div>
+                <figure class="bg-verde">
+                    <img class="w-51 pt-5 pb-10" src="img/videojuegosVendidos/hades2.jpg" alt="" />
+                </figure>
+            </div>
+        </a>
+        <a href="#" class="w-17/20 sm:w-6/25">
+            <div data-theme="light" class="card shadow-sm hover:shadow-xl transition flex-wrap">
+                <div class="card-body">
+                    <h2 class="card-title font-busqueda">Hollow Knight: Silksong</h2>
+                    <p class="font-menu">¡Descubre un vasto reino embrujado en Hollow Knight: Silksong! Explora, lucha y sobrevive mientras asciendes a la cima de un vasto reino gobernado por la seda y el canto.</p>
+                </div>
+                <figure class="bg-amarillo">
+                    <img class="w-51 pt-5 pb-10" src="img/videojuegosVendidos/silksong.png" alt="" />
+                </figure>
+            </div>
+        </a>
+    </section>
 </body>
 </html>
