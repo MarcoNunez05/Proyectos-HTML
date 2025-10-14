@@ -12,13 +12,13 @@
 @font-face 
 {
     font-family: 'jersey10';
-    src: url(/12_SitioFramework/public/font/Jersey10-Regular.ttf);
+    src: url(./font/Jersey10-Regular.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'jersey25';
-    src: url(/12_SitioFramework/public/font/Jersey25-Regular.ttf);
+    src: url(./font/Jersey25-Regular.ttf);
     font-weight: normal;
 }
 
