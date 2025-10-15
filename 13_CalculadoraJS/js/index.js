@@ -1,4 +1,3 @@
-seleccionarOperacion()
 function seleccionarOperacion() {
     let num1 = Number(prompt("Inserte el primer número", 0));
     let num2 = Number(prompt("Inserte el segundo número", 0));
