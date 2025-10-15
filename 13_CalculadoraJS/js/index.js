@@ -24,7 +24,7 @@ function seleccionarOperacion() {
         }
         else
         {
-            console.log("Esta operación es definida");
+            console.log("Esta operación es indefinida");
             return;
         }
     }
