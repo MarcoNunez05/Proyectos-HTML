@@ -50,6 +50,8 @@ Este es un repositorio hecho por __Marco Antonio Núñez Muñoz__ para guardar l
 
     1. [Calculadora](/13_CalculadoraJS/index.html)
 
+    2. [Manipulación DOM](/14_ManipulacionDOM/public/index.html)
+
 * __Unidad 5__
 
 * __Unidad 6__

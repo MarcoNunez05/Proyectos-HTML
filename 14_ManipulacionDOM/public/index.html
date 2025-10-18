@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manipulación DOM</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body id="body" class="min-h-screen flex flex-col manCol">
+    <div class="card shadow-sm flex justify-center items-center h-screen">
+        <div class="card-body">
+            <h2 class="text-3xl text-center pb-5 text-[#000000] font-bold">Cambiar color de fondo</h2>
+            <div class="card-actions flex justify-center">
+                <button class="btn bg-[#f01329] border-[#f01329] shadow-[#f01329]" onclick="rojo()">Rojo</button>
+                <button class="btn bg-[#099909] border-[#099909] shadow-[#099909]" onclick="verde()">Verde</button>
+                <button class="btn bg-[#1053e3] border-[#1053e3] shadow-[#1053e3]" onclick="azul()">Azul</button>
+                <button class="btn bg-[#90949e] border-[#90949e] shadow-[#90949e]" onclick="reestablecer()">Restablecer</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const body = document.getElementById('body');
+        
+        function rojo()
+        {
+            body.style.background = "#f01329";
+        }
+
+        function verde()
+        {
+            body.style.background = "#099909";
+        }
+
+        function azul()
+        {
+            body.style.background = "#1053e3";
+        }
+
+        function reestablecer()
+        {
+            body.style.background = "#FFFFFF";
+        }
+    </script>
+</body>
+</html>
