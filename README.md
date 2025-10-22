@@ -52,7 +52,7 @@ Este es un repositorio hecho por __Marco Antonio Núñez Muñoz__ para guardar l
 
     2. [Manipulación DOM](/14_ManipulacionDOM/public/index.html)
 
-    3. [Calculadora visual e Historial](/15_Calculadora/public/index.html)
+    3. [Calculadora gráfica e Historial](/15_Calculadora/public/index.html)
 
 * __Unidad 5__
 
