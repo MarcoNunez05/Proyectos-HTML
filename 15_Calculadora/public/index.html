@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manipulación DOM</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body id="body" class="min-h-screen flex flex-col">
+    <div class="flex gap-x-4 justify-center pt-70">
+        <div class="card w-96 bg-white card-xl shadow-sm">
+            <div class="card-body">
+                <input id="inputCalc" type="text" class="input bg-neutral-content text-black text-xl text-end"/>
+                <div class="flex gap-x-4 justify-center pt-5 pb-1">
+                    <button class="btn btn-info text-white w-[21%] text-xl">7</button>
+                    <button class="btn btn-info text-white w-[21%] text-xl">8</button>
+                    <button class="btn btn-info text-white w-[21%] text-xl">9</button>
+                    <button class="btn btn-info text-white w-[21%] text-xl">/</button>    
+                </div>
+                <div class="flex gap-x-4 justify-center pb-1">
+                    <button class="btn btn-info text-white w-[21%] text-xl">4</button>
+                    <button class="btn btn-info text-white w-[21%] text-xl">5</button>
+                    <button class="btn btn-info text-white w-[21%] text-xl">6</button>
+                    <button class="btn btn-info text-white w-[21%] text-xl">*</button>    
+                </div>
+                <div class="flex gap-x-4 justify-center pb-1">
+                    <button class="btn btn-info text-white w-[21%] text-xl">1</button>
+                    <button class="btn btn-info text-white w-[21%] text-xl">2</button>
+                    <button class="btn btn-info text-white w-[21%] text-xl">3</button>
+                    <button class="btn btn-info text-white w-[21%] text-xl">-</button>    
+                </div>
+                <div class="flex gap-x-4 justify-center">
+                    <button class="btn btn-info text-white w-[21%] text-xl">0</button>
+                    <button class="btn btn-info text-white w-[21%] text-xl">=</button>
+                    <button class="btn btn-info text-white w-[21%] text-xl">C</button>
+                    <button class="btn btn-info text-white w-[21%] text-xl">+</button>    
+                </div>
+            </div>
+        </div>
+        <div class="card w-96 bg-white card-xl shadow-sm">
+            <div id="historial" class="card-body">
+                <h2 class="card-title text-black justify-center">Historial de cálculos</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        const calculadora = document.getElementById('inputCalc');
+        const historial = document.getElementById('historial');
+        const botones = document.querySelectorAll('button');
+
+        botones.forEach(boton => {
+            boton.addEventListener('click', function(e) {
+                if (this.textContent === '=')
+                {
+                    if (calculadora.value != '')
+                    {
+                        const resultado = document.createElement('p');
+                        resultado.classList.add('text-black')
+                        resultado.textContent = calculadora.value;
+
+                        calculadora.value = eval(calculadora.value);
+
+                        resultado.textContent += (" = " + calculadora.value); 
+                        e.preventDefault();
+                        historial.appendChild(resultado);
+                    }
+                }
+                else if (this.textContent === 'C')
+                {
+                    calculadora.value = '';
+                }
+                else
+                {
+                    calculadora.value += this.textContent;
+                }
+            })
+        })
+    </script>
+</body>
+</html>
