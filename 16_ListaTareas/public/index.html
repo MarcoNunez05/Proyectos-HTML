@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manipulación DOM</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body id="body" class="min-h-screen flex flex-col">
+    <div class="flex gap-x-4 justify-center pt-70">
+        <div class="card w-[40%] bg-white card-xl shadow-sm">
+            <div class="card-body">
+                <h1 class="text-black card-title justify-center pb-5">Mi lista de Tareas</h1>
+                <div id="tareasList" class="space-y-5">
+                </div>
+                <div class="flex pt-5">
+                    <input id="tareaInput" type="text" class="input bg-neutral-content text-black text-xl w-[95%]" placeholder="Inserte la tarea..."/>
+                    <button id="agregar" class="btn btn-info text-white text-md">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const agregar = document.getElementById('agregar');
+        const tarea = document.getElementById('tareaInput');
+        const tareasList = document.getElementById('tareasList');
+        let listaTareas = [];
+        let numList = 0;
+
+        function agregarTarea(texto)
+        {
+            const card = document.createElement('div');
+            card.id = String(numList);
+            card.classList.add('card');
+            card.classList.add('bg-white');
+            card.classList.add('card-xl');
+            card.classList.add('shadow-sm');
+            card.classList.add('justify-center');
+
+            const cardCenter = document.createElement('div');
+            cardCenter.classList.add('flex');
+            cardCenter.classList.add('pl-5');
+            cardCenter.classList.add('items-center');
+
+            const check = document.createElement('input');
+            check.type = 'checkbox';
+            check.classList.add('justify-start');
+
+            const tareaText = document.createElement('p');
+            tareaText.classList.add('text-black');
+            tareaText.classList.add('pl-5');
+            tareaText.textContent = texto;
+
+            const eliminar = document.createElement('button');
+            eliminar.classList.add('btn');
+            eliminar.classList.add('btn-secondary');
+            eliminar.classList.add('text-white');
+            eliminar.classList.add('text-md');
+            eliminar.textContent = 'Eliminar';
+
+            check.addEventListener('change', (e) =>{
+                tareaText.classList.toggle('line-through');
+                tareaText.classList.toggle('text-black');
+                tareaText.classList.toggle('text-gray-500');
+            })
+
+            eliminar.addEventListener('click', (e) =>{
+                eliminarTarea(parseInt(card.id));
+            })
+
+            card.appendChild(cardCenter);
+            cardCenter.appendChild(check);
+            cardCenter.appendChild(tareaText);
+            cardCenter.appendChild(eliminar);
+            
+            numList++;
+
+            tareasList.appendChild(card);
+        }
+
+        agregar.addEventListener('click', function() {
+            agregarTarea(tarea.value);
+            guardarTarea(tarea.value);
+        })
+
+        function guardarTarea(tarea)
+        {
+            listaTareas.push(tarea);
+            localStorage.setItem('ListaTareas', JSON.stringify(listaTareas));
+        }
+
+        function eliminarTarea(numTarea)
+        {
+            if (numTarea > -1)
+            {
+                listaTareas.splice(numTarea, 1);
+                localStorage.setItem('ListaTareas', JSON.stringify(listaTareas));
+                numList = 0;
+                actualizarLista();
+            }
+        }
+
+        function actualizarLista()
+        {
+            listaTareas = JSON.parse(localStorage.getItem('ListaTareas'));
+            console.log(listaTareas);
+            if (listaTareas == null) {
+                listaTareas = [];
+            }
+            tareasList.innerHTML = '';
+
+            listaTareas.forEach(tarea =>{
+                agregarTarea(tarea);
+            })
+        }
+
+        window.onload = function(){
+            actualizarLista();
+        }
+    </script>
+</body>
+</html>
