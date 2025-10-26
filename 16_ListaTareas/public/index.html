@@ -26,9 +26,10 @@
         const tarea = document.getElementById('tareaInput');
         const tareasList = document.getElementById('tareasList');
         let listaTareas = [];
+        let listaChecked = [];
         let numList = 0;
 
-        function agregarTarea(texto)
+        function agregarTarea(texto, completada)
         {
             const card = document.createElement('div');
             card.id = String(numList);
@@ -48,9 +49,19 @@
             check.classList.add('justify-start');
 
             const tareaText = document.createElement('p');
-            tareaText.classList.add('text-black');
             tareaText.classList.add('pl-5');
             tareaText.textContent = texto;
+
+            if (completada == 1)
+            {
+                check.checked = true;
+                tareaText.classList.add('text-gray-500');
+                tareaText.classList.add('line-through');
+            }
+            else
+            {
+                tareaText.classList.add('text-black');
+            }
 
             const eliminar = document.createElement('button');
             eliminar.classList.add('btn');
@@ -63,6 +74,16 @@
                 tareaText.classList.toggle('line-through');
                 tareaText.classList.toggle('text-black');
                 tareaText.classList.toggle('text-gray-500');
+                if (check.checked)
+                {
+                    listaChecked[parseInt(card.id)] = 1;
+                    localStorage.setItem('ListaChecked', JSON.stringify(listaChecked));
+                }
+                else
+                {
+                    listaChecked[parseInt(card.id)] = 0;
+                    localStorage.setItem('ListaChecked', JSON.stringify(listaChecked));
+                }
             })
 
             eliminar.addEventListener('click', (e) =>{
@@ -80,14 +101,17 @@
         }
 
         agregar.addEventListener('click', function() {
-            agregarTarea(tarea.value);
+            agregarTarea(tarea.value, 0);
             guardarTarea(tarea.value);
         })
 
         function guardarTarea(tarea)
         {
             listaTareas.push(tarea);
+            listaChecked.push(0);
+            console.log(listaChecked);
             localStorage.setItem('ListaTareas', JSON.stringify(listaTareas));
+            localStorage.setItem('ListaChecked', JSON.stringify(listaChecked));
         }
 
         function eliminarTarea(numTarea)
@@ -95,7 +119,9 @@
             if (numTarea > -1)
             {
                 listaTareas.splice(numTarea, 1);
+                listaChecked.splice(numTarea, 1);
                 localStorage.setItem('ListaTareas', JSON.stringify(listaTareas));
+                localStorage.setItem('ListaChecked', JSON.stringify(listaChecked));
                 numList = 0;
                 actualizarLista();
             }
@@ -104,14 +130,18 @@
         function actualizarLista()
         {
             listaTareas = JSON.parse(localStorage.getItem('ListaTareas'));
+            listaChecked = JSON.parse(localStorage.getItem('ListaChecked'));
             console.log(listaTareas);
             if (listaTareas == null) {
                 listaTareas = [];
             }
+            if (listaChecked == null) {
+                listaChecked = [];
+            }
             tareasList.innerHTML = '';
 
             listaTareas.forEach(tarea =>{
-                agregarTarea(tarea);
+                agregarTarea(tarea, listaChecked[numList]);
             })
         }
 
