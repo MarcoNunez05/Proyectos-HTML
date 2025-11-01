@@ -56,6 +56,8 @@ Este es un repositorio hecho por __Marco Antonio Núñez Muñoz__ para guardar l
 
     4. [Lista de Tareas](/16_ListaTareas/public/index.html)
 
+    5. Modules: Se cambiaron las tareas 3 y 4 de esta unidad.
+
 * __Unidad 5__
 
 * __Unidad 6__

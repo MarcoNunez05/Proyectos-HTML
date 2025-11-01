@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Manipulación DOM</title>
+  <title>Lista de tareas</title>
   <link href="./output.css" rel="stylesheet">
 </head>
 
@@ -11,7 +11,7 @@
     <div class="flex gap-x-4 justify-center pt-70">
         <div class="card w-96 bg-white card-xl shadow-sm">
             <div class="card-body">
-                <input id="inputCalc" type="text" class="input bg-neutral-content text-black text-xl text-end"/>
+                <input id="inputCalc" type="text" class="input bg-neutral-content text-black text-xl text-end" disabled/>
                 <div class="flex gap-x-4 justify-center pt-5 pb-1">
                     <button class="btn btn-info text-white w-[21%] text-xl">7</button>
                     <button class="btn btn-info text-white w-[21%] text-xl">8</button>
@@ -44,38 +44,6 @@
             </div>
         </div>
     </div>
-    <script>
-        const calculadora = document.getElementById('inputCalc');
-        const historial = document.getElementById('historial');
-        const botones = document.querySelectorAll('button');
-
-        botones.forEach(boton => {
-            boton.addEventListener('click', function(e) {
-                if (this.textContent === '=')
-                {
-                    if (calculadora.value != '')
-                    {
-                        const resultado = document.createElement('p');
-                        resultado.classList.add('text-black')
-                        resultado.textContent = calculadora.value;
-
-                        calculadora.value = eval(calculadora.value);
-
-                        resultado.textContent += (" = " + calculadora.value); 
-                        e.preventDefault();
-                        historial.appendChild(resultado);
-                    }
-                }
-                else if (this.textContent === 'C')
-                {
-                    calculadora.value = '';
-                }
-                else
-                {
-                    calculadora.value += this.textContent;
-                }
-            })
-        })
-    </script>
+    <script type="module" src="../src/js/main.js"></script>
 </body>
 </html>
