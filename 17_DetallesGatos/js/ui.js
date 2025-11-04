@@ -29,7 +29,7 @@ export function showBreed(breed, breedimg){
         <p><b>Amigable con niños:</b> ${breed[0].child_friendly || 'Amigable con niños no disponible'}</p>
         <p><b>Amigable con perros:</b> ${breed[0].dog_friendly || 'Amigable con perros no disponible'}</p>
         <p><b>Origen:</b> ${breed[0].origin || 'Origen no disponible'}</p>
-        <p><b>Enlace a Wikipedia:</b> <a href=# target="_blank">Más información</p>
+        <p><b>Enlace a Wikipedia:</b> <a href=${breed[0].wikipedia_url} target="_blank">Más información</p>
         
     `;
     detallesDiv.appendChild(catCard);
