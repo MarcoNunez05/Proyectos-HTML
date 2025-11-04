@@ -58,6 +58,8 @@ Este es un repositorio hecho por __Marco Antonio Núñez Muñoz__ para guardar l
 
     5. Modules: Se cambiaron las tareas 3 y 4 de esta unidad.
 
+    6. [Detalles de gatos](/17_DetallesGatos/index.html)
+
 * __Unidad 5__
 
 * __Unidad 6__
